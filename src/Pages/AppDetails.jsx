@@ -19,7 +19,7 @@ const AppDetails = () => {
   const [installed, setInstalled] = useState(false);
   const [toastVisible, setToastVisible] = useState(false);
 
-  // Helper to format download count
+  
   const formatDownloads = (downloads) => {
     if (downloads >= 1_000_000) {
       return (downloads / 1_000_000).toFixed(1) + 'M';
@@ -30,10 +30,10 @@ const AppDetails = () => {
     return downloads.toString();
   };
 
-  // Helper to format rating
+  
   const formatRating = (rating) => rating.toFixed(1);
 
-  // Fetch app data based on id
+  
   useEffect(() => {
     const fetchApp = async () => {
       try {
@@ -56,7 +56,6 @@ const AppDetails = () => {
     fetchApp();
   }, [id]);
 
-  // Check if current app is already installed (when app is loaded)
   useEffect(() => {
     if (app) {
       const installedApps = JSON.parse(localStorage.getItem('installedApps') || '[]');
@@ -64,22 +63,22 @@ const AppDetails = () => {
     }
   }, [app]);
 
-  // Handle install button click
+  
   const handleInstall = () => {
-    // Get current installed apps from localStorage
+    
     const installedApps = JSON.parse(localStorage.getItem('installedApps') || '[]');
-    // Add this app's id if not already present
+    
     if (!installedApps.includes(app.id)) {
       installedApps.push(app.id);
       localStorage.setItem('installedApps', JSON.stringify(installedApps));
     }
     setInstalled(true);
     setToastVisible(true);
-    // Auto-hide toast after 3 seconds
+    
     setTimeout(() => setToastVisible(false), 3000);
   };
 
-  // Prepare chart data
+  
   const chartData = app?.ratings.map((item) => ({
     name: item.name,
     count: item.count,
@@ -104,7 +103,7 @@ const AppDetails = () => {
   return (
     <div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Back button */}
+        
         <button
           onClick={() => navigate('/apps')}
           className="mb-6 text-[#632EE3] hover:text-[#9F62F2] transition-colors"
@@ -114,7 +113,7 @@ const AppDetails = () => {
 
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
           <div className="flex flex-col lg:flex-row">
-            {/* Left column: Image */}
+            
             <div className="lg:w-1/3 p-6 flex justify-center items-center bg-gray-100">
               <img
                 src={app.image}
@@ -123,7 +122,7 @@ const AppDetails = () => {
               />
             </div>
 
-            {/* Right column: Details */}
+            
             <div className="lg:w-2/3 p-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{app.title}</h1>
               <p className="text-gray-500 mb-4">{app.companyName}</p>
@@ -159,7 +158,7 @@ const AppDetails = () => {
             </div>
           </div>
 
-          {/* Chart Section */}
+          {/* Chart Section. Designed a bit differently from figma */}
           <div className="p-8 border-t border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Rating Distribution</h2>
             <div className="h-80 w-full">
@@ -178,14 +177,13 @@ const AppDetails = () => {
             </div>
           </div>
 
-          {/* Description Section */}
+          
           <div className="p-8 border-t border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">About This App</h2>
             <p className="text-gray-700 leading-relaxed">{app.description}</p>
           </div>
         </div>
 
-        {/* Toast Notification */}
         {toastVisible && (
           <div className="fixed bottom-4 right-4 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg animate-fade-in-up">
             <div className="flex items-center gap-2">

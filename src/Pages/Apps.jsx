@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router'; 
+import { useNavigate } from 'react-router';
 import errphoto from '../assets/error-404.png';
 
 const Apps = () => {
   const [allApps, setAllApps] = useState([]);
   const [filteredApps, setFilteredApps] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [sortOption, setSortOption] = useState('high-low'); // 'high-low' or 'low-high'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
 
-  
+  // Format download count (e.g., 5000 → 5K, 2500000 → 2.5M)
   const formatDownloads = (downloads) => {
     if (downloads >= 1_000_000) {
       return (downloads / 1_000_000).toFixed(1) + 'M';
@@ -21,10 +22,10 @@ const Apps = () => {
     return downloads.toString();
   };
 
-  
+  // Format rating to one decimal
   const formatRating = (rating) => rating.toFixed(1);
 
-  
+  // Fetch all apps from JSON
   useEffect(() => {
     const fetchApps = async () => {
       try {
@@ -34,23 +35,23 @@ const Apps = () => {
         }
         const data = await response.json();
         setAllApps(data);
-        setFilteredApps(data); 
+        setFilteredApps(data);
       } catch (err) {
         setError(err.message);
       } finally {
         setLoading(false);
       }
     };
-
     fetchApps();
   }, []);
 
+  // Live search filter
   useEffect(() => {
     if (searchTerm.trim() === '') {
       setFilteredApps(allApps);
     } else {
       const lowercasedTerm = searchTerm.toLowerCase();
-      const filtered = allApps.filter(app =>
+      const filtered = allApps.filter((app) =>
         app.title.toLowerCase().includes(lowercasedTerm)
       );
       setFilteredApps(filtered);
@@ -60,6 +61,15 @@ const Apps = () => {
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
+
+  // Sort apps based on the selected option
+  const sortedApps = [...filteredApps].sort((a, b) => {
+    if (sortOption === 'high-low') {
+      return b.downloads - a.downloads;
+    } else {
+      return a.downloads - b.downloads;
+    }
+  });
 
   if (loading) {
     return (
@@ -86,8 +96,27 @@ const Apps = () => {
             All Apps
           </h2>
           <p className="text-[#627382] inter max-w-2xl mx-auto">
-            Discover our complete collection of innovative apps designed to simplify and enhance your digital life.
+            Discover our complete collection of innovative apps designed to simplify and enhance your digital
+            life.
           </p>
+        </div>
+
+        {/* Sort Dropdown */}
+        <div className="flex justify-end mb-4">
+          <div className="flex items-center gap-2">
+            <label htmlFor="sort" className="text-sm text-gray-600">
+              Sort by downloads:
+            </label>
+            <select
+              id="sort"
+              value={sortOption}
+              onChange={(e) => setSortOption(e.target.value)}
+              className="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#632EE3]"
+            >
+              <option value="high-low">High → Low</option>
+              <option value="low-high">Low → High</option>
+            </select>
+          </div>
         </div>
 
         {/* Total apps and search bar */}
@@ -108,13 +137,13 @@ const Apps = () => {
         </div>
 
         {/* Apps Grid */}
-        {filteredApps.length === 0 ? (
+        {sortedApps.length === 0 ? (
           <div className="flex justify-center py-12">
             <img src={errphoto} alt="No App Found" />
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {filteredApps.map((app) => (
+            {sortedApps.map((app) => (
               <div
                 key={app.id}
                 onClick={() => navigate(`/app/${app.id}`)}
@@ -135,7 +164,8 @@ const Apps = () => {
                   </h3>
                   <div className="flex items-center justify-between mt-2">
                     <span className="text-xs text-[#00d390] bg-[#F1F5E8] p-1 rounded font-medium">
-                      <i className="fa-solid fa-download" style={{ color: '#00d390' }}></i> {formatDownloads(app.downloads)}
+                      <i className="fa-solid fa-download" style={{ color: '#00d390' }}></i>{' '}
+                      {formatDownloads(app.downloads)}
                     </span>
                     <span className="text-xs bg-[#FFF0E1] p-1 rounded text-[#FF6B35] font-medium">
                       ★ {formatRating(app.ratingAvg)}
