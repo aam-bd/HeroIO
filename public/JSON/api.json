@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/images/app1.jpg",
+    "image": "../../src/assets/1001.png",
     "title": "TaskMaster Pro",
     "companyName": "AgileSoft Inc.",
     "id": 1001,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app2.jpg",
+    "image": "../../src/assets/1002.png",
     "title": "Zenith Weather",
     "companyName": "MeteoGlobal",
     "id": 1002,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app3.jpg",
+    "image": "../../src/assets/1003.jpg",
     "title": "FitJourney",
     "companyName": "HealthTech Innovations",
     "id": 1003,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app4.jpg",
+    "image": "../../src/assets/1004.png",
     "title": "Pixel Quest RPG",
     "companyName": "RetroGamer Studios",
     "id": 1004,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app5.jpg",
+    "image": "../../src/assets/1005.png",
     "title": "BudgetBee",
     "companyName": "FinanceSmart",
     "id": 1005,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app6.jpg",
+    "image": "../../src/assets/1006.jpg",
     "title": "LingoLearn",
     "companyName": "Global Dialect",
     "id": 1006,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app7.jpg",
+    "image": "../../src/assets/1007.png",
     "title": "Mindful Moments",
     "companyName": "Serenity Apps",
     "id": 1007,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app8.jpg",
+    "image": "../../src/assets/1008.png",
     "title": "SnapFilter Plus",
     "companyName": "Visionary Media",
     "id": 1008,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app9.jpg",
+    "image": "../../src/assets/1009.jpg",
     "title": "RecipeVault",
     "companyName": "Culinary Code",
     "id": 1009,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app10.jpg",
+    "image": "../../src/assets/1010.jpg",
     "title": "Turbo Racer 3D",
     "companyName": "Velocity Games",
     "id": 1010,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app11.jpg",
+    "image": "../../src/assets/1011.jpg",
     "title": "CryptoTracker",
     "companyName": "BlockChain Dynamics",
     "id": 1011,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app12.jpg",
+    "image": "../../src/assets/1012.jpg",
     "title": "SleepCycle Optimizer",
     "companyName": "DreamLabs",
     "id": 1012,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app13.jpg",
+    "image": "../../src/assets/1013.jpg",
     "title": "PodcastHub",
     "companyName": "AudioStream Inc.",
     "id": 1013,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app14.jpg",
+    "image": "../../src/assets/1014.jpg",
     "title": "City Transit Map",
     "companyName": "Urban Navigate",
     "id": 1014,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app15.jpg",
+    "image": "../../src/assets/1015.jpg",
     "title": "PlantIdentifier",
     "companyName": "EcoSoft",
     "id": 1015,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app16.jpg",
+    "image": "../../src/assets/1016.jpg",
     "title": "Secure Vault",
     "companyName": "Fortress Security",
     "id": 1016,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app17.jpg",
+    "image": "../../src/assets/1017.jpg",
     "title": "SketchPad Pro",
     "companyName": "Creative Canvas",
     "id": 1017,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app18.jpg",
+    "image": "../../src/assets/1018.jpg",
     "title": "GuitarTuner AI",
     "companyName": "Acoustic Logic",
     "id": 1018,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app19.jpg",
+    "image": "../../src/assets/1019.jpg",
     "title": "Dating Match",
     "companyName": "Spark Connections",
     "id": 1019,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://example.com/images/app20.jpg",
+    "image": "../../src/assets/1020.jpg",
     "title": "Kitten Match 3",
     "companyName": "Cozy Games",
     "id": 1020,
