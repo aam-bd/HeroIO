@@ -36,7 +36,7 @@ const Trending = () => {
     const fetchApps = async () => {
       try {
         // Fetch the JSON data from the local file
-        const response = await fetch('../../public/JSON/api.json');
+        const response = await fetch('/JSON/api.json');
         if (!response.ok) {
           throw new Error('Failed to fetch app data');
         }
