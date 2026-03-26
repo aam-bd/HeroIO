@@ -21,6 +21,7 @@ const Navbar = () => {
         <nav className="bg-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
+                    <NavLink to="/">
                     <div className="flex items-center shrink-0 space-x-2">
                         <img 
                             src={logo}
@@ -31,6 +32,7 @@ const Navbar = () => {
                             HERO.IO
                         </span>
                     </div>
+                    </NavLink>
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
                             <NavLink
