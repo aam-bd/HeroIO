@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://example.com/images/app1.jpg",
+    "title": "TaskMaster Pro",
+    "companyName": "AgileSoft Inc.",
+    "id": 1001,
+    "description": "Boost your daily productivity with intelligent task management.",
+    "size": 45,
+    "reviews": 100,
+    "ratingAvg": 4.2,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 10 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 50 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app2.jpg",
+    "title": "Zenith Weather",
+    "companyName": "MeteoGlobal",
+    "id": 1002,
+    "description": "Hyper-local weather forecasting with stunning radar maps.",
+    "size": 82,
+    "reviews": 1000,
+    "ratingAvg": 3.6,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app3.jpg",
+    "title": "FitJourney",
+    "companyName": "HealthTech Innovations",
+    "id": 1003,
+    "description": "Your ultimate companion for tracking workouts and nutrition.",
+    "size": 120,
+    "reviews": 500,
+    "ratingAvg": 4.2,
+    "downloads": 100000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app4.jpg",
+    "title": "Pixel Quest RPG",
+    "companyName": "RetroGamer Studios",
+    "id": 1004,
+    "description": "An epic 8-bit adventure filled with dungeons and dragons.",
+    "size": 250,
+    "reviews": 10000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 500 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app5.jpg",
+    "title": "BudgetBee",
+    "companyName": "FinanceSmart",
+    "id": 1005,
+    "description": "Simple and intuitive expense tracking to save you money.",
+    "size": 30,
+    "reviews": 200,
+    "ratingAvg": 4.1,
+    "downloads": 15000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 30 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app6.jpg",
+    "title": "LingoLearn",
+    "companyName": "Global Dialect",
+    "id": 1006,
+    "description": "Master a new language with bite-sized, interactive lessons.",
+    "size": 150,
+    "reviews": 5000,
+    "ratingAvg": 4.2,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 2500 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app7.jpg",
+    "title": "Mindful Moments",
+    "companyName": "Serenity Apps",
+    "id": 1007,
+    "description": "Guided meditations and relaxing sounds for a peaceful mind.",
+    "size": 95,
+    "reviews": 800,
+    "ratingAvg": 4.1,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app8.jpg",
+    "title": "SnapFilter Plus",
+    "companyName": "Visionary Media",
+    "id": 1008,
+    "description": "Enhance your photos with AI-powered filters and effects.",
+    "size": 110,
+    "reviews": 1200,
+    "ratingAvg": 4.3,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app9.jpg",
+    "title": "RecipeVault",
+    "companyName": "Culinary Code",
+    "id": 1009,
+    "description": "Discover, save, and organize your favorite recipes easily.",
+    "size": 55,
+    "reviews": 300,
+    "ratingAvg": 4.3,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 5 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 150 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app10.jpg",
+    "title": "Turbo Racer 3D",
+    "companyName": "Velocity Games",
+    "id": 1010,
+    "description": "High-octane arcade racing with customizable supercars.",
+    "size": 850,
+    "reviews": 4000,
+    "ratingAvg": 4.1,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app11.jpg",
+    "title": "CryptoTracker",
+    "companyName": "BlockChain Dynamics",
+    "id": 1011,
+    "description": "Real-time cryptocurrency portfolio tracking and news.",
+    "size": 40,
+    "reviews": 1500,
+    "ratingAvg": 4.0,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app12.jpg",
+    "title": "SleepCycle Optimizer",
+    "companyName": "DreamLabs",
+    "id": 1012,
+    "description": "Analyze your sleep patterns and wake up feeling refreshed.",
+    "size": 65,
+    "reviews": 2500,
+    "ratingAvg": 4.2,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app13.jpg",
+    "title": "PodcastHub",
+    "companyName": "AudioStream Inc.",
+    "id": 1013,
+    "description": "Stream and download millions of podcasts from around the world.",
+    "size": 70,
+    "reviews": 600,
+    "ratingAvg": 4.3,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app14.jpg",
+    "title": "City Transit Map",
+    "companyName": "Urban Navigate",
+    "id": 1014,
+    "description": "Offline public transportation maps and schedules for 100+ cities.",
+    "size": 180,
+    "reviews": 8000,
+    "ratingAvg": 4.1,
+    "downloads": 3000000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app15.jpg",
+    "title": "PlantIdentifier",
+    "companyName": "EcoSoft",
+    "id": 1015,
+    "description": "Instantly identify plants, flowers, and trees using your camera.",
+    "size": 210,
+    "reviews": 350,
+    "ratingAvg": 4.0,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 60 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 150 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app16.jpg",
+    "title": "Secure Vault",
+    "companyName": "Fortress Security",
+    "id": 1016,
+    "description": "Military-grade encryption for your passwords and sensitive files.",
+    "size": 25,
+    "reviews": 4500,
+    "ratingAvg": 4.5,
+    "downloads": 1000000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1000 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app17.jpg",
+    "title": "SketchPad Pro",
+    "companyName": "Creative Canvas",
+    "id": 1017,
+    "description": "Professional drawing and illustration tools for digital artists.",
+    "size": 320,
+    "reviews": 900,
+    "ratingAvg": 4.1,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 400 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app18.jpg",
+    "title": "GuitarTuner AI",
+    "companyName": "Acoustic Logic",
+    "id": 1018,
+    "description": "Highly accurate instrument tuner powered by audio AI.",
+    "size": 48,
+    "reviews": 2000,
+    "ratingAvg": 4.4,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app19.jpg",
+    "title": "Dating Match",
+    "companyName": "Spark Connections",
+    "id": 1019,
+    "description": "Meet local singles and find meaningful connections.",
+    "size": 130,
+    "reviews": 7000,
+    "ratingAvg": 3.9,
+    "downloads": 4500000,
+    "ratings": [
+      { "name": "1 star", "count": 700 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 3000 }
+    ]
+  },
+  {
+    "image": "https://example.com/images/app20.jpg",
+    "title": "Kitten Match 3",
+    "companyName": "Cozy Games",
+    "id": 1020,
+    "description": "A relaxing puzzle game featuring adorable kittens.",
+    "size": 175,
+    "reviews": 150,
+    "ratingAvg": 4.5,
+    "downloads": 8000,
+    "ratings": [
+      { "name": "1 star", "count": 0 },
+      { "name": "2 star", "count": 5 },
+      { "name": "3 star", "count": 15 },
+      { "name": "4 star", "count": 30 },
+      { "name": "5 star", "count": 100 }
+    ]
+  }
+]
